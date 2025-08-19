@@ -13,8 +13,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
+    var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let win = UIWindow(frame: UIScreen.main.bounds)
+                    win.rootViewController = UINavigationController(rootViewController: NewsTableViewController())
+                    win.makeKeyAndVisible()
+                    window = win
+       // print("News Article:", FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last ?? "News Articles Not Found!")
+        
         return true
     }
 
