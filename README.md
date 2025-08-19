@@ -1,6 +1,6 @@
 Created an iOS Reader app that fetches and displays news articles using a public API (NewsAPI.org). The app supports offline viewing.
 
-//MARK: ADD your API KEY in apiServices file.
+//MARK: ADD your API KEY in apiServices.swift file.
 
 Used URLSession, for fetching all the data form REST API.
 Used Coredata to store articles localy on Device for offline Viewing.
